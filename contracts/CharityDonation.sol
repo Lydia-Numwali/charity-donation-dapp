@@ -25,6 +25,7 @@ contract CharityDonation {
         emit FundsWithdrawn(owner, amount);
     }
 
+    // Function to get the balance of the contract
     function getBalance() public view returns (uint256) {
         return address(this).balance;
     }
